@@ -59,23 +59,23 @@ h1 {
 }
 
 h2 {
-    font-size: 22px
+    font-size: 24px
 }
 
 h3 {
-    font-size: 18px
+    font-size: 20px
 }
 
 h4 {
-    font-size: 16px
+    font-size: 18px
 }
 
 h5 {
-    font-size: 14px
+    font-size: 16px
 }
 
 h6 {
-    font-size: 13px
+    font-size: 15px
 }
 
 h1 a,
@@ -86,7 +86,7 @@ h5 a,
 h6 a {
     color: #212121;
     text-decoration: none!important;
-    opacity: 1
+    opacity: 0.9
 }
 
 h1 a:hover,
@@ -120,7 +120,7 @@ a,
     background-color: transparent !important;
     border: 2px solid #ddd;
     padding: 12px 40px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .lead {
@@ -152,7 +152,7 @@ button:focus{
 
 
 /*------------------------------------------------------------------
-    LOADER 
+   IMAGE LOADER 
 -------------------------------------------------------------------*/
 
 #preloader {
