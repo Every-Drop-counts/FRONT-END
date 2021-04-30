@@ -1,6 +1,5 @@
 <?php
    session_start();
-   //echo var_dump($_SESSION['loggedin']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,9 +18,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<!-- Site Icons
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
+	
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -34,22 +31,13 @@
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
 
-	<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	
 
 </head>
 
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
-	<!-- LOADER -->
-	<!-- <div id="preloader">
-		<div class="loader">
-			<img src="images/preloader.gif" alt="" />
-		</div>
-    </div>end loader -->
-	<!-- END LOADER -->
+	
 
 	<!-- Start top bar -->
 	<div class="main-top">
@@ -68,86 +56,11 @@
 					</div>
 					<div class="my-1">
 
-					<!-- LoginModal 
-					<div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
-						aria-labelledby="loginModalLabel" aria-hidden="true">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title" id="loginModalLabel">Login to your Account</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
-								</div>
-								<div class="modal-body">
-									<form>
-										<div class="form-group">
-											<label for="loginInputEmail1">Email address</label>
-											<input type="email" class="form-control" id="loginInputEmail1" name="loginInputEmail1"
-												aria-describedby="emailHelp" placeholder="Enter email">
-											<small id="emailHelp" class="form-text text-muted">We'll never share your email with
-												anyone else.</small>
-										</div>
-										<div class="form-group">
-											<label for="loginInputPassword1">Password</label>
-											<input type="password" class="form-control" id="loginInputPassword1" name="loginInputPassword1"
-												placeholder="Password">
-										</div>
-								
-										<button type="submit" class="btn btn-primary">Login</button>
-									</form>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-								</div>
-							</div>
-						</div>
-					</div> -->
+					
 					<?php include 'login.php'  ?>
                     <?php include 'signup.php' ?>
 				
-					<!-- SignupModal 
-					<div class="modal fade" id="signupModal" tabindex="-1" role="dialog"
-						aria-labelledby="signModalLabel" aria-hidden="true">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title" id="signupModalLabel">Create an Account</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
-								</div>
-								<div class="modal-body">
-									<form action="signup.php" method="post"> 
-										<div class="form-group">
-											<label for="signupInputEmail1">Email address</label>
-											<input type="email" class="form-control" id="signupInputEmail1" name="username"
-												aria-describedby="emailHelp" placeholder="Enter email">
-											<small id="emailHelp" class="form-text text-muted">We'll never share your email with
-												anyone else.</small>
-										</div>
-										<div class="form-group">
-											<label for="signupInputPassword1">Password</label>
-											<input type="password" class="form-control" id="signupInputPassword1" name="password"
-												placeholder="Password">
-										</div>
-										<div class="form-group">
-											<label for="csignupInputPassword1">ConfirmPassword</label>
-											<input type="password" class="form-control" id="csignupInputPassword1" name="cpassword"
-												placeholder="ConfirmPassword">
-										</div>
-		
-										<button type="submit" class="btn btn-primary">Create Account</button>
-									</form>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-								</div>
-							</div>
-						</div>
-					</div> -->
-
-
+					
 				</div>
 					<div class="right-top">
 						<ul>
@@ -165,42 +78,7 @@
 	</div>
 	<!-- End top bar -->
     <?php include 'nav.php' ?>
-	<!-- Start header 
-	<header class="top-header">
-		<nav class="navbar header-nav navbar-expand-lg">
-			<div class="container">
-				<a class="navbar-brand" href="index.html"><img src="images/project_logo.png" alt="image"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
-					aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-				<div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
-					<ul class="navbar-nav">
-						<li><a class="nav-link active" href="#home">Home</a></li>
-						<li><a class="nav-link" href="#about">About Us</a></li>
-						<li><a class="nav-link" href="inventory.php">Inventory</a></li>
-						<li><a class="nav-link" href="request.php">Request Blood</a></li>
-						<li><a class="nav-link" href="donate.php">Donate Blood</a></li>
-						<li><a class="nav-link" href="#team">Emergency Cases</a></li>
-						<li><a class="nav-link" href="contact_us.php">Contact</a></li>
-					</ul>
-
-					<div class="mx-2">
-						<button class="btn btn-outline-success" id ="login"data-toggle="modal"
-							data-target="#loginModal">Login</button>
-						<button class="btn btn-outline-success" id="signup" data-toggle="modal"
-							data-target="#signupModal">SignUp</button>
-						<button class="btn btn-outline-success" id="logout">Logout</button>	
-						
-					</div>
-				</div>
-			</div>
-		</nav>
-	</header>
-	End header -->
-
+	
 	<!-- Start Banner -->
 	<div class="ulockd-home-slider">
 		<div class="container-fluid">
@@ -284,7 +162,7 @@
 										Our motto - “Donate blood to save the most precious human life”
 									</li>
 								</ul>
-								<!-- <a href="#" class="new-btn-d br-2">Read More</a> -->
+								
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12">
 								<div class="about-m">
@@ -334,14 +212,7 @@
 							<h3 class="title">Karan</h3>
 							<span class="post">Age:17<br>Pgimer sector-12</span><br>
 							<span class="post">Blood:A+<br> Contact:9999999</span>
-							<!-- <ul class="social">
-								 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li> 
-								<li>blood- A+</li>
-								<li>Contact- 9999999999</li>
-							</ul> -->
+							
 						</div>
 					</div>
 				</div>
@@ -384,8 +255,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">Health Lab</a> Design By
-						: <a href="https://html.design/">html design</a></p>
+					<p class="footer-company-name">All Rights Reserved. &copy; 2021 </p>
 				</div>
 			</div>
 		</div>
